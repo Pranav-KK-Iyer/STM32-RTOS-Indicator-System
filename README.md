@@ -2,9 +2,11 @@
 ![RTOS](https://img.shields.io/badge/RTOS-FreeRTOS-green)
 ![Language](https://img.shields.io/badge/Language-C-orange)
 ![Status](https://img.shields.io/badge/Status-Complete-success)
-# 🚗 RTOS-Based Indicator System (STM32 + FreeRTOS)
 
 <p align="center">
+# 🚗 RTOS-Based Indicator System (STM32 + FreeRTOS)
+
+
   <b>Event-driven automotive indicator system using STM32 & FreeRTOS</b><br>
   State Machine • Multitasking • Queue Communication
 </p>
