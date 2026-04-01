@@ -1,3 +1,7 @@
+![Platform](https://img.shields.io/badge/Platform-STM32-blue)
+![RTOS](https://img.shields.io/badge/RTOS-FreeRTOS-green)
+![Language](https://img.shields.io/badge/Language-C-orange)
+![Status](https://img.shields.io/badge/Status-Complete-success)
 # 🚗 RTOS-Based Indicator System (STM32 + FreeRTOS)
 
 <p align="center">
