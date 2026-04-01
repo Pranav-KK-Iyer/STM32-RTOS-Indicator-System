@@ -1,2 +1,115 @@
-# STM32-RTOS-Indicator-System
-Event-driven indicator system using STM32 and FreeRTOS with state machine and task-based design
+# 🚗 RTOS-Based Indicator System (STM32 + FreeRTOS)
+
+<p align="center">
+  <b>Event-driven automotive indicator system using STM32 & FreeRTOS</b><br>
+  State Machine • Multitasking • Queue Communication
+</p>
+
+---
+
+## 📌 Overview
+This project implements a real-time automotive indicator system using **STM32F411RE** and **FreeRTOS**.  
+It demonstrates **task scheduling, inter-task communication, and deterministic state machine behavior**.
+
+---
+
+## ⚙️ Key Features
+- 🧵 FreeRTOS-based multitasking
+- 🔄 Event-driven architecture (message queues)
+- 🧠 Finite State Machine (FSM)
+- ⏱️ Software debouncing + long press detection
+- 🚨 Hazard mode priority handling
+- ⚡ Different blink rates for different states
+
+---
+
+## 🧠 System Architecture
+    +-------------+
+    | Button Task |
+    +-------------+
+           |
+           v
+    +------------------+
+    | Message Queue    |
+    +------------------+
+           |
+           v
+    +------------------+
+    | Indicator Task   |
+    | (State Machine)  |
+    +------------------+
+           |
+           v
+    +-------------+
+    | LED Task    |
+    +-------------+
+
+---
+
+## 🔄 State Machine
+
+| Current State | Input Event | Next State |
+|-------------- |------------ |----------- |
+| IDLE          | LEFT        | LEFT       |
+| IDLE          | RIGHT       | RIGHT      |
+| IDLE          | BOTH        | HAZARD     |
+| LEFT          | LEFT        | IDLE       |
+| RIGHT         | RIGHT       | IDLE       |
+| ANY           | BOTH        | HAZARD     |
+| HAZARD        | LEFT/RIGHT  | IDLE       |
+
+---
+
+## 🛠️ Hardware Used
+- STM32F411RE (Nucleo Board)
+- Onboard LED (PA5)
+- Push Buttons (PC0, PC1)
+
+---
+
+## ⚡ Behavior
+
+| Mode  | LED Behavior|
+|------ |-------------|
+| LEFT  | Slow Blink  |
+| RIGHT | Slow Blink  |
+| HAZARD| Fast Blink  |
+| IDLE  | OFF         |
+
+---
+
+## 📂 Project Structure
+Core/
+├── Src/
+│ ├── main.c # RTOS tasks + logic
+│
+Drivers/ # HAL drivers
+RTOS_Indicator.ioc # CubeMX config
+
+---
+
+## 🚀 Getting Started
+
+1. Open project in STM32CubeIDE
+2. Connect STM32 Nucleo board
+3. Build & Flash
+4. Press buttons to control indicator modes
+
+---
+
+## 🎯 Learning Outcomes
+- RTOS scheduling & task prioritization
+- Queue-based inter-task communication
+- Embedded state machine design
+- Hardware interfacing with STM32 HAL
+
+---
+
+## 📸 Demo (Add screenshots here)
+- CubeIDE setup
+- Serial output / LED demo
+
+---
+
+## 🧠 Author
+Pranav Krishnakumar Iyer
