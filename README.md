@@ -112,8 +112,11 @@ RTOS_Indicator.ioc # CubeMX config
 ---
 
 ## 📸 Demo (Add screenshots here)
-- CubeIDE setup
-- Serial output / LED demo
+- <img width="1710" height="1112" alt="Screenshot 2026-04-01 at 11 24 50 PM" src="https://github.com/user-attachments/assets/d1e70fda-5318-48e8-8af9-9e99d8b876bf" />
+
+- <img width="1710" height="1112" alt="Screenshot 2026-04-01 at 11 25 50 PM" src="https://github.com/user-attachments/assets/ba3b32bd-d544-41a5-9247-a5a30370f884" />
+
+- <img width="1710" height="1112" alt="Screenshot 2026-04-01 at 11 36 35 PM" src="https://github.com/user-attachments/assets/89cda281-6072-47fd-96fa-0143212fd008" />
 
 ---
 
