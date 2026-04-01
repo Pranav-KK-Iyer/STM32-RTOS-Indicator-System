@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Status-Complete-success)
 
 
-# 🚗 RTOS-Based Indicator System (STM32 + FreeRTOS)
+# RTOS-Based Indicator System (STM32 + FreeRTOS)
 
 <p align="center">
   <b>Event-driven automotive indicator system using STM32 & FreeRTOS</b><br>
@@ -19,17 +19,17 @@ It demonstrates **task scheduling, inter-task communication, and deterministic s
 
 ---
 
-## ⚙️ Key Features
-- 🧵 FreeRTOS-based multitasking
-- 🔄 Event-driven architecture (message queues)
-- 🧠 Finite State Machine (FSM)
-- ⏱️ Software debouncing + long press detection
-- 🚨 Hazard mode priority handling
-- ⚡ Different blink rates for different states
+## Key Features
+- FreeRTOS-based multitasking
+- Event-driven architecture (message queues)
+- Finite State Machine (FSM)
+- Software debouncing + long press detection
+- Hazard mode priority handling
+- Different blink rates for different states
 
 ---
 
-## 🧠 System Architecture
+## System Architecture
     +-------------+
     | Button Task |
     +-------------+
@@ -52,7 +52,7 @@ It demonstrates **task scheduling, inter-task communication, and deterministic s
 
 ---
 
-## 🔄 State Machine
+## State Machine
 
 | Current State | Input Event | Next State |
 |-------------- |------------ |----------- |
@@ -66,14 +66,14 @@ It demonstrates **task scheduling, inter-task communication, and deterministic s
 
 ---
 
-## 🛠️ Hardware Used
+## Hardware Used
 - STM32F411RE (Nucleo Board)
 - Onboard LED (PA5)
 - Push Buttons (PC0, PC1)
 
 ---
 
-## ⚡ Behavior
+## Behavior
 
 | Mode  | LED Behavior|
 |------ |-------------|
@@ -84,7 +84,7 @@ It demonstrates **task scheduling, inter-task communication, and deterministic s
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 Core/
 ├── Src/
 │ ├── main.c # RTOS tasks + logic
@@ -94,7 +94,7 @@ RTOS_Indicator.ioc # CubeMX config
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Open project in STM32CubeIDE
 2. Connect STM32 Nucleo board
@@ -111,7 +111,7 @@ RTOS_Indicator.ioc # CubeMX config
 
 ---
 
-## 📸 Demo (Add screenshots here)
+## 📸 Demo
 - <img width="1710" height="1112" alt="Screenshot 2026-04-01 at 11 24 50 PM" src="https://github.com/user-attachments/assets/d1e70fda-5318-48e8-8af9-9e99d8b876bf" />
 
 - <img width="1710" height="1112" alt="Screenshot 2026-04-01 at 11 25 50 PM" src="https://github.com/user-attachments/assets/ba3b32bd-d544-41a5-9247-a5a30370f884" />
@@ -120,5 +120,5 @@ RTOS_Indicator.ioc # CubeMX config
 
 ---
 
-## 🧠 Author
+## Author
 Pranav Krishnakumar Iyer
