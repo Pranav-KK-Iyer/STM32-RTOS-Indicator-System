@@ -1,2 +1,4 @@
 📸 Media & Demonstration
-This section showcases the complete working of the STM32 RTOS-based Indicator System. It includes images of the hardware setup, wiring configuration, and a live demonstration of the system in action. The demo highlights left, right, and hazard indicator functionalities along with synchronized LED blinking (and buzzer output, if implemented), providing a clear visualization of the real-time behavior of the system.
+This section showcases the complete working of the STM32 RTOS-based Indicator System. 
+It includes images of the hardware setup, wiring configuration, and a live demonstration of the system in action. 
+The demo highlights left, right, and hazard indicator functionalities along with synchronized LED blinking (and buzzer output, if implemented), providing a clear visualization of the real-time behavior of the system.
